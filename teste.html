@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="file" id="myFileInput">
+<button onclick="buscarArquivo()">Buscar Arquivo</button>
+
+<script>
+function buscarArquivo() {
+  var input = document.getElementById('myFileInput');
+  var file = input.files[0];
+  var reader = new FileReader();
+
+  reader.onload = function(e) {
+    var conteudoArquivo = reader.result;
+    // Faça algo com o conteúdo do arquivo aqui
+    console.log(conteudoArquivo);
+  };
+
+  reader.readAsText(file);
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,94 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: Pokemon;
+    src: url(Pokemon\ Solid.ttf);
+}
+
+@font-face {
+    font-family: montserrat;
+    src: url(Montserrat-Medium.ttf);
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url(pokemonbg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#titulo{
+    font-family: Pokemon;
+    color: white;
+    margin: 0px;
+    font-size: 24pt;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: auto;
+    background-color: rgba(238, 228, 228, 0.5);
+    backdrop-filter: blur(16px);
+    position: relative;
+    top: 10px;
+    border-radius: 50px;
+}
+
+#form{
+    font-family: montserrat;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.container{
+    position: relative;
+}
+
+.perguntas{
+    height: 50px;
+    width: 400px;
+    font-size: 16pt;
+    border-radius: 20px;
+    border: black 2px solid;
+}
+
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+}
+
+#file{
+    margin-top: 5px;
+}
+
+#checkbox{
+    margin-bottom: 20px;
+}
+
+.erro{
+    /*display: none;*/
+    color: rgb(181, 0, 0);
+}
+
+.exclamacao{
+    display: none;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    bottom: 10px;
+    left: 350px;
+}
+
+button{
+    width: 80px;
+    margin-bottom: 30px;
+    border-radius: 20px;
+}
