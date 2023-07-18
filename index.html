@@ -10,28 +10,28 @@
 <body>
     <p id="titulo">Inscrava-se para ser um treinador Pokemon</p>
     <div class="formulario">
-        <form action="" id="form">
+        <form id="form">
             <div class="container">
-            <p> <label>Nome Completo:</label>
-                <input type="text" class="perguntas" placeholder="Nome Completo" maxlength="30"/> 
-                <img src="ponto-de-exclamacao.png" class="exclamacao"></p> 
+            <p> <label for="nomeCom">Nome Completo:</label>
+                <input type="text" class="perguntas" id="nomeCom" placeholder="Nome Completo" maxlength="30"/> 
+                <img src="ponto-de-exclamacao.png" class="exclamacao" id="erroNom"></p> 
             </div>
             
             <div class="container">
-            <p> <label>Idade:</label> <br/>
-                <input type="number" class="perguntas" placeholder="Sua idade"/> </p> 
+            <p> <label for="idade">Idade:</label> <br/>
+                <input type="number" id="idade" class="perguntas" placeholder="Sua idade"/> </p> 
                 <img src="ponto-de-exclamacao.png" class="exclamacao"></p> 
             </div>
 
             <div class="container">
-            <p> <label>Endereço:</label> <br/>
-                <input type="text" class="perguntas" placeholder="Rua Caravalho, 550, Cajazeiras"/> </p> 
+            <p> <label for="endereco">Endereço:</label> <br/>
+                <input type="text" id="endereco" class="perguntas" placeholder="Rua Caravalho, 550, Cajazeiras"/> </p> 
                 <img src="ponto-de-exclamacao.png" class="exclamacao"></p> 
             </div>
 
             <div class="container">
-            <p> <label>Cidade:</label> <br/>
-                <input type="text" class="perguntas" placeholder="Cidade de Palet"/> </p> 
+            <p> <label for="cidade">Cidade:</label> <br/>
+                <input type="text" id="cidade" class="perguntas" placeholder="Cidade de Palet"/> </p> 
                 <img src="ponto-de-exclamacao.png" class="exclamacao"></p>    
             </div>
 
@@ -44,13 +44,14 @@
 
             <div>
                 <input type="checkbox" id="checkbox">
-                <label for="horns">Atesto que todas as informações são verdadeiras</label>
+                <label for="checkbox">Atesto que todas as informações são verdadeiras</label>
               </div>
             
-              <button>Enviar</button>
+              <button type="submit" id="enviar">Enviar</button>
         </form>
 
         
      </div>
 </body>
+<script src="./script.js">  </script>
 </html>
